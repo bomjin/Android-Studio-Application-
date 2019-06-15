@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:onClick="increaseValue"
+            android:text="+"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:onClick="decreaseValue"
+            android:text="-"
+            android:textSize="20dp" /> //onClick 속성을 이용해서 버튼 처리를 쉽게 할 수 있다. OnClick에 넣은 값을 자바코드에서 사용한다.
+
+        <Button
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:onClick="setRed"
+
+            android:text="빨강"
+
+            />
+
+        <Button
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:onClick="setBlue"
+
+            android:text="파랑"
+
+            />
+
+        <Button
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:onClick="setYellow"
+
+            android:text="노랑"
+
+            />
+        <Button
+            android:onClick="setGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="녹색"
+
+            />
+        <Button
+            android:onClick="setBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="검정"
+
+            />
+
+
+    </LinearLayout>
+
+    <com.example.bumjin.mathgraphic.MyView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    // View 클래스를 상속받은 MyView 클래스를 fill_parent버튼 아래에 수직으로 배치하였다.
+    // 이떄 패기지명을 포함한 뷰의 이름까지 적어줘야하나다.
+
+
+</LinearLayout>
